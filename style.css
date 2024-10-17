@@ -1,0 +1,32 @@
+body {font: 10px GillSansRegular, "Gill Sans MT", "Gill Sans", "Trebuchet MS", sans-serif; width: 95em; background: #1a1a1a}
+.canvas {position: relative}
+.genre {padding: 0px 2px; position: absolute; white-space: nowrap; cursor: pointer;}
+.genre:hover {color: #faccff !important}
+.genre[played]:before {content: "\266B" !important; color: black !important}
+#mirror .genre:hover {color: white !important}
+#mirror .genre[played]:before {content: "\266B" !important; color: white !important}
+#mirror .current.genre[played]:before {color: gray !important}
+.genrelink {padding: 0px 2px; position: absolute; white-space: nowrap;}
+#mirror .genre[played] {color: #E6ADB7 !important}
+.title_container {top: em; left:1em; width: 150em; height: 5em; color: #fff; background-color: #c4fcef; position: relative; text-align: center; padding-top: 25px; padding-left: 44px;}
+.title {float: left; font-size: 200%; margin-right: 32px; color: black}
+.title a {color: black}
+.showsong {position: absolute; left: 300px}
+form {display: inline; white-space: nowrap;}
+a, .related a {text-decoration: none; color: teal}
+.def {font-size: 200%; margin-top: 137px;}
+.h1 {color: #00c9a7;}
+a:hover, .fakelink:hover {color: #faccff !important}
+.fakelink, .togglecontrols {cursor: pointer; color: teal}
+.genre.current {font-weight: bold; padding: 1px 2px; background: whitesmoke; border-color: black; border-style: solid;
+    border-width: 1px 1px 1px 8px; z-index: 1000}
+.genre.current .navlink {background: whitesmoke}
+.navlink {display: none; color: #faccff; background: white; padding: 0px 2px}
+#mirror .navlink {background: inherit}
+.navlink:hover {color: white !important; background: black !important}
+#mirror .navlink:hover {color: #faccff !important; background: white !important}
+.genre.current .navlink, .genre:hover .navlink, .genrelink:hover .navlink {display: inline; z-index: 10000}
+.genrelink:hover .navlink {color: #faccff}
+.related {color: gray; margin-top: 22px; width: 135em;}
+.related a {white-space: nowrap}
+.sigil {color: black}
